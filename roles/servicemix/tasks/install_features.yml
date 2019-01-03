@@ -3,6 +3,4 @@
   
 - name: Install basic features
   command: "sudo /opt/servicemix/apache-servicemix-7.0.1/bin/client {{ item }}"
-  with_items:
-    - feature:install war
-    - feature:install camel
+  with_items: {{ features }}
