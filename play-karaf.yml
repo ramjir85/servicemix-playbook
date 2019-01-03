@@ -1,0 +1,11 @@
+---
+
+- hosts: aws-ec2-host
+  remote_user: ec2-user
+
+  tasks:
+  - name: Open Karaf Console
+    command: "/tmp/servicemix/apache-servicemix-7.0.1/bin/client {{ item }}" 
+    with_items:
+       - feature:install war
+       - feature:install camel 

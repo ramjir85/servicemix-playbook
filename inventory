@@ -1,0 +1,6 @@
+[aws-ec2-host]
+18.208.129.64
+
+[aws-ec2-host:vars]
+ansible_ssh_user=ec2-user 
+ansible_ssh_private_key_file= ~/.ssh/PlatformKeyPair.pem

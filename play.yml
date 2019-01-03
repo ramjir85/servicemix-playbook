@@ -1,0 +1,6 @@
+---
+
+- hosts: aws-ec2-host
+  remote_user: ec2-user
+  roles:
+     - servicemix

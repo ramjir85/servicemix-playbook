@@ -1,0 +1,4 @@
+---
+
+- include: setup_servicemix.yml
+- include: install_features.yml
